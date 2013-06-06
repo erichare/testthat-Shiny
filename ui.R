@@ -1,6 +1,6 @@
 library(shiny)
 
-files <- dir("/var/shiny-server/www/testthat-Shiny/tests")
+files <- dir("tests")
 
 # Define UI for application that plots random distributions 
 shinyUI(pageWithSidebar(
