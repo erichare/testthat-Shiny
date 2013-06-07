@@ -16,7 +16,7 @@ shinyUI(pageWithSidebar(
     # Show a plot of the generated distribution
     mainPanel(
         tabsetPanel(
-            tabPanel("Summary", h3("Test Cases"), verbatimTextOutput("test_cases"), br(), h3("Test Results"), verbatimTextOutput("test_results")),
+            tabPanel("Summary", h3("Test Cases"), h5(verbatimTextOutput("test_cases")), br(), h3("Test Results"), h5(verbatimTextOutput("test_results"))),
             tabPanel("Plots", plotOutput("test_errors_plot"))
         )
     )
